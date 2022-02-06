@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Frosting</title>
+    <!--Bootstrap Styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<!--Insert Header-->
+    <div th:insert="fragments/_header :: header"></div>
+<!--Start our content-->
+    <div class="container">
+        <img th:src="@{/img/frosting.jpg}" alt="frosting in a can" height="226px" width="400px"/>
+        <h3>Frosting is the Best Part of a Cake</h3>
+        <p>There are a few different types of frosting that people often use when frosting a cake. Just like you can get a cake mix in a box, you can get frosting in a can, simple
+        and convenient. You can also make frosting from scratch, just like you can make a cake from scratch.
+        </p>
+        <h4>Frosting in a Can</h4>
+        <p>The most convenient way to acquire frosting for your cake is to get it pre-made in a can.
+        </p>
+
+        <h4>Frosting from Scratch</h4>
+        <p>If you want to make your own frosting, one of the easiest recipes to make is American buttercream. Swiss meringue buttercream is another great option, especially if
+        you like your frosting less sweet but American buttercream is very easy to make.</p>
+        <ol>
+            <li>Gather your ingredients. For American buttercream you need butter, powdered or confectioners sugar, salt, vanilla, and milk or water.</li>
+            <li>Beat your butter, powdered sugar, and salt together until fully incorporated</li>
+            <li>Add the vanilla, increase mixer speed to medium-high and beat until smooth and fluffy</li>
+            <li>Add milk or water until the desired consistency is reached</li>
+        </ol>
+        <h3>Frosting the cake</h3>
+        <p>Take your cooled cake and frosting and spread a little frosting all over the outside of the cake. You want just enough to cover the cake. This is called the crumb coat.</p>
+        <p>Refrigerate the cake until the frosting has solidified a bit before spreading the rest of the frosting on the outside of the cake.</p>
+    </div>
+<!--Insert Footer-->
+<div th:replace="fragments/_footer :: footer"></div>
+    <!--Bootstrap scripts and Popper-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

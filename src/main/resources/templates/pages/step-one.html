@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Baking the Cake</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<!--Insert header-->
+    <div th:insert="fragments/_header :: header"></div>
+<!--Start our content-->
+    <div class="container">
+        <h3>Baking a Cake is Really Quite Simple</h3>
+        <p>There are a couple of simple ways to begin baking and decorating your own cakes, and they all start with the cake itself. You can
+            either make a cake from scratch or make one from a box.
+        </p>
+        <h4>Box Cake Mix</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <img th:src="@{/img/white-cake-mix.jpg}" height="225" width="225" alt="white cake mix">
+            </div>
+            <div class="col-sm-4">
+                <img th:src="@{/img/chocolate-cake-mix.png}" height="225" width="225" alt="chocolate cake mix">
+            </div>
+            <div class="col-sm-4">
+                <img th:src="@{/img/lemon-cake-mix.jpg}" height="225" width="225" alt="lemon cake mix"/>
+            </div>
+        </div>
+
+        <p> The benefit of using a box mix is that almost everything you need comes to you in the one box.
+            You typically have to add only a few ingredients: eggs, oil and water, mix things together, bake and BAM! you have a cake.
+        </p>
+
+        <h5>The Box Cake Directions</h5>
+        <div>For best results you should always follow the directions on the back of the box of cake mix you have purchased, but the general directions
+        for making a cake from a boxed mix are as follows:
+            <ol>
+                <li>Preheat your oven to 350 degrees and grease the bottom and sides of your cake pan. One cake mix typically can make one 13x9 inch cake or two 8 inch round cakes.</li>
+                <li>Mix the cake mix, oil, water, and eggs (amounts specified on the box of cake mix) with an electric mixer on medium speed, or beat vigorously by hand for two minutes.</li>
+                <li>Pour into pan(s).</li>
+                <li>Bake as directed by the chart on the back of the box of cake mix or until a toothpick or cake tester inserted in the middle comes out clean.</li>
+                <li>Cool cake completely before frosting.</li>
+            </ol>
+        </div>
+
+        <h4>Making a Cake from Scratch</h4>
+        <div>
+            Making a cake from scratch can be a little more challenging than making one from a box mix because none of the ingredients are handed to you in a box. The general directions
+            are as follows:
+            <ol>
+                <li>Gather your ingredients. Typical cake ingredients include butter or oil, flour, baking powder, salt sugar, eggs, vanilla, and milk.</li>
+                <li>Preheat your oven to 350 degrees and grease the bottom and sides of your cake pan. The recipe you use will typically tell you what size cake pan to use.</li>
+                <li>Mix the ingredients together according to the recipe. Typically butter is creamed with sugar, then the eggs are added one at a time, followed by the vanilla.
+                The dry ingredients are mixed together separately and then added to the butter mixture in three batches, alternating with the milk. Theses steps help make the cake light and fluffy.</li>
+                <li>Pour batter in the pan(3).</li>
+                <li>Bake as directed by your recipe.</li>
+                <li>Cool cake completely before frosting.</li>
+            </ol>
+            <p>A good recipe for a vanilla cake can be found at https://www.foodnetwork.com/recipes/food-network-kitchen/basic-vanilla-cake-recipe-2043654</p>
+        </div>
+    </div>
+<!--Insert Footer-->
+    <div th:replace="fragments/_footer :: footer"></div>
+<!--Bootstrap Scripts and Popper-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
