@@ -10,4 +10,13 @@ public class HomeController {
     public String showHomePage() {
         return "index";
     }
+
+    @RequestMapping("/forward-me")
+    public String doForward() {
+        return "forward:/cake/baking";
+    }
+
+    @RequestMapping("/redirect-me")
+    public String doRedirect() {
+        return "redirect:http://www.wctc.edu"; }
 }
